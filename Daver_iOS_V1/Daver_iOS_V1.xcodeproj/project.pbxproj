@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF730B7D28BDAC320027DF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730B7C28BDAC320027DF71 /* AppDelegate.swift */; };
+		EF730B7F28BDAC320027DF71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730B7E28BDAC320027DF71 /* SceneDelegate.swift */; };
+		EF730B8128BDAC320027DF71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730B8028BDAC320027DF71 /* ViewController.swift */; };
+		EF730B8428BDAC320027DF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF730B8228BDAC320027DF71 /* Main.storyboard */; };
+		EF730B8728BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF730B8528BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld */; };
+		EF730B8928BDAC320027DF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF730B8828BDAC320027DF71 /* Assets.xcassets */; };
+		EF730B8C28BDAC320027DF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF730B8A28BDAC320027DF71 /* LaunchScreen.storyboard */; };
+		EF730B9728BDAC320027DF71 /* Daver_iOS_V1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730B9628BDAC320027DF71 /* Daver_iOS_V1Tests.swift */; };
+		EF730BA128BDAC320027DF71 /* Daver_iOS_V1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730BA028BDAC320027DF71 /* Daver_iOS_V1UITests.swift */; };
+		EF730BA328BDAC320027DF71 /* Daver_iOS_V1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730BA228BDAC320027DF71 /* Daver_iOS_V1UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF730B9328BDAC320027DF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF730B7128BDAC320027DF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF730B7828BDAC320027DF71;
+			remoteInfo = Daver_iOS_V1;
+		};
+		EF730B9D28BDAC320027DF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF730B7128BDAC320027DF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF730B7828BDAC320027DF71;
+			remoteInfo = Daver_iOS_V1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF730B7928BDAC320027DF71 /* Daver_iOS_V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daver_iOS_V1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF730B7C28BDAC320027DF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF730B7E28BDAC320027DF71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF730B8028BDAC320027DF71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF730B8328BDAC320027DF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF730B8628BDAC320027DF71 /* Daver_iOS_V1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daver_iOS_V1.xcdatamodel; sourceTree = "<group>"; };
+		EF730B8828BDAC320027DF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF730B8B28BDAC320027DF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF730B8D28BDAC320027DF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF730B9228BDAC320027DF71 /* Daver_iOS_V1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Daver_iOS_V1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF730B9628BDAC320027DF71 /* Daver_iOS_V1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daver_iOS_V1Tests.swift; sourceTree = "<group>"; };
+		EF730B9C28BDAC320027DF71 /* Daver_iOS_V1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Daver_iOS_V1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF730BA028BDAC320027DF71 /* Daver_iOS_V1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daver_iOS_V1UITests.swift; sourceTree = "<group>"; };
+		EF730BA228BDAC320027DF71 /* Daver_iOS_V1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daver_iOS_V1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF730B7628BDAC320027DF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF730B8F28BDAC320027DF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF730B9928BDAC320027DF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF730B7028BDAC320027DF71 = {
+			isa = PBXGroup;
+			children = (
+				EF730B7B28BDAC320027DF71 /* Daver_iOS_V1 */,
+				EF730B9528BDAC320027DF71 /* Daver_iOS_V1Tests */,
+				EF730B9F28BDAC320027DF71 /* Daver_iOS_V1UITests */,
+				EF730B7A28BDAC320027DF71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF730B7A28BDAC320027DF71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF730B7928BDAC320027DF71 /* Daver_iOS_V1.app */,
+				EF730B9228BDAC320027DF71 /* Daver_iOS_V1Tests.xctest */,
+				EF730B9C28BDAC320027DF71 /* Daver_iOS_V1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF730B7B28BDAC320027DF71 /* Daver_iOS_V1 */ = {
+			isa = PBXGroup;
+			children = (
+				EF730B7C28BDAC320027DF71 /* AppDelegate.swift */,
+				EF730B7E28BDAC320027DF71 /* SceneDelegate.swift */,
+				EF730B8028BDAC320027DF71 /* ViewController.swift */,
+				EF730B8228BDAC320027DF71 /* Main.storyboard */,
+				EF730B8828BDAC320027DF71 /* Assets.xcassets */,
+				EF730B8A28BDAC320027DF71 /* LaunchScreen.storyboard */,
+				EF730B8D28BDAC320027DF71 /* Info.plist */,
+				EF730B8528BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld */,
+			);
+			path = Daver_iOS_V1;
+			sourceTree = "<group>";
+		};
+		EF730B9528BDAC320027DF71 /* Daver_iOS_V1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EF730B9628BDAC320027DF71 /* Daver_iOS_V1Tests.swift */,
+			);
+			path = Daver_iOS_V1Tests;
+			sourceTree = "<group>";
+		};
+		EF730B9F28BDAC320027DF71 /* Daver_iOS_V1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF730BA028BDAC320027DF71 /* Daver_iOS_V1UITests.swift */,
+				EF730BA228BDAC320027DF71 /* Daver_iOS_V1UITestsLaunchTests.swift */,
+			);
+			path = Daver_iOS_V1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF730B7828BDAC320027DF71 /* Daver_iOS_V1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF730BA628BDAC320027DF71 /* Build configuration list for PBXNativeTarget "Daver_iOS_V1" */;
+			buildPhases = (
+				EF730B7528BDAC320027DF71 /* Sources */,
+				EF730B7628BDAC320027DF71 /* Frameworks */,
+				EF730B7728BDAC320027DF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Daver_iOS_V1;
+			productName = Daver_iOS_V1;
+			productReference = EF730B7928BDAC320027DF71 /* Daver_iOS_V1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF730B9128BDAC320027DF71 /* Daver_iOS_V1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF730BA928BDAC320027DF71 /* Build configuration list for PBXNativeTarget "Daver_iOS_V1Tests" */;
+			buildPhases = (
+				EF730B8E28BDAC320027DF71 /* Sources */,
+				EF730B8F28BDAC320027DF71 /* Frameworks */,
+				EF730B9028BDAC320027DF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF730B9428BDAC320027DF71 /* PBXTargetDependency */,
+			);
+			name = Daver_iOS_V1Tests;
+			productName = Daver_iOS_V1Tests;
+			productReference = EF730B9228BDAC320027DF71 /* Daver_iOS_V1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF730B9B28BDAC320027DF71 /* Daver_iOS_V1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF730BAC28BDAC320027DF71 /* Build configuration list for PBXNativeTarget "Daver_iOS_V1UITests" */;
+			buildPhases = (
+				EF730B9828BDAC320027DF71 /* Sources */,
+				EF730B9928BDAC320027DF71 /* Frameworks */,
+				EF730B9A28BDAC320027DF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF730B9E28BDAC320027DF71 /* PBXTargetDependency */,
+			);
+			name = Daver_iOS_V1UITests;
+			productName = Daver_iOS_V1UITests;
+			productReference = EF730B9C28BDAC320027DF71 /* Daver_iOS_V1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF730B7128BDAC320027DF71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EF730B7828BDAC320027DF71 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					EF730B9128BDAC320027DF71 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = EF730B7828BDAC320027DF71;
+					};
+					EF730B9B28BDAC320027DF71 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = EF730B7828BDAC320027DF71;
+					};
+				};
+			};
+			buildConfigurationList = EF730B7428BDAC320027DF71 /* Build configuration list for PBXProject "Daver_iOS_V1" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF730B7028BDAC320027DF71;
+			productRefGroup = EF730B7A28BDAC320027DF71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF730B7828BDAC320027DF71 /* Daver_iOS_V1 */,
+				EF730B9128BDAC320027DF71 /* Daver_iOS_V1Tests */,
+				EF730B9B28BDAC320027DF71 /* Daver_iOS_V1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF730B7728BDAC320027DF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF730B8C28BDAC320027DF71 /* LaunchScreen.storyboard in Resources */,
+				EF730B8928BDAC320027DF71 /* Assets.xcassets in Resources */,
+				EF730B8428BDAC320027DF71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF730B9028BDAC320027DF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF730B9A28BDAC320027DF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF730B7528BDAC320027DF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF730B8128BDAC320027DF71 /* ViewController.swift in Sources */,
+				EF730B7D28BDAC320027DF71 /* AppDelegate.swift in Sources */,
+				EF730B7F28BDAC320027DF71 /* SceneDelegate.swift in Sources */,
+				EF730B8728BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF730B8E28BDAC320027DF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF730B9728BDAC320027DF71 /* Daver_iOS_V1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF730B9828BDAC320027DF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF730BA328BDAC320027DF71 /* Daver_iOS_V1UITestsLaunchTests.swift in Sources */,
+				EF730BA128BDAC320027DF71 /* Daver_iOS_V1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF730B9428BDAC320027DF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF730B7828BDAC320027DF71 /* Daver_iOS_V1 */;
+			targetProxy = EF730B9328BDAC320027DF71 /* PBXContainerItemProxy */;
+		};
+		EF730B9E28BDAC320027DF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF730B7828BDAC320027DF71 /* Daver_iOS_V1 */;
+			targetProxy = EF730B9D28BDAC320027DF71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF730B8228BDAC320027DF71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF730B8328BDAC320027DF71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF730B8A28BDAC320027DF71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF730B8B28BDAC320027DF71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF730BA428BDAC320027DF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF730BA528BDAC320027DF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF730BA728BDAC320027DF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Daver_iOS_V1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AZAZAPFIZER.Daver-iOS-V1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF730BA828BDAC320027DF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Daver_iOS_V1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AZAZAPFIZER.Daver-iOS-V1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF730BAA28BDAC320027DF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AZAZAPFIZER.Daver-iOS-V1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daver_iOS_V1.app/Daver_iOS_V1";
+			};
+			name = Debug;
+		};
+		EF730BAB28BDAC320027DF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AZAZAPFIZER.Daver-iOS-V1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daver_iOS_V1.app/Daver_iOS_V1";
+			};
+			name = Release;
+		};
+		EF730BAD28BDAC320027DF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AZAZAPFIZER.Daver-iOS-V1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Daver_iOS_V1;
+			};
+			name = Debug;
+		};
+		EF730BAE28BDAC320027DF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA35V5PR3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AZAZAPFIZER.Daver-iOS-V1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Daver_iOS_V1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF730B7428BDAC320027DF71 /* Build configuration list for PBXProject "Daver_iOS_V1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF730BA428BDAC320027DF71 /* Debug */,
+				EF730BA528BDAC320027DF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF730BA628BDAC320027DF71 /* Build configuration list for PBXNativeTarget "Daver_iOS_V1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF730BA728BDAC320027DF71 /* Debug */,
+				EF730BA828BDAC320027DF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF730BA928BDAC320027DF71 /* Build configuration list for PBXNativeTarget "Daver_iOS_V1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF730BAA28BDAC320027DF71 /* Debug */,
+				EF730BAB28BDAC320027DF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF730BAC28BDAC320027DF71 /* Build configuration list for PBXNativeTarget "Daver_iOS_V1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF730BAD28BDAC320027DF71 /* Debug */,
+				EF730BAE28BDAC320027DF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF730B8528BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF730B8628BDAC320027DF71 /* Daver_iOS_V1.xcdatamodel */,
+			);
+			currentVersion = EF730B8628BDAC320027DF71 /* Daver_iOS_V1.xcdatamodel */;
+			path = Daver_iOS_V1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF730B7128BDAC320027DF71 /* Project object */;
+}
