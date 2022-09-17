@@ -11,6 +11,6 @@ import Swinject
 final class Inject<T>{
     let wrappedValue: T
     init(){
-        wrappedValue = AppDelegate.container.resolve(T.self)!
+        wrappedValue = DependencyProvider.share.container.resolve(T.self)!
     }
 }

@@ -29,6 +29,12 @@
 		EF730BB828BDAEEE0027DF71 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730BB728BDAEEE0027DF71 /* OnBoardingVC.swift */; };
 		EF730BBB28BDAEF70027DF71 /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730BBA28BDAEF70027DF71 /* baseVC.swift */; };
 		EF730BBD28BDAF0B0027DF71 /* OnBoarginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF730BBC28BDAF0B0027DF71 /* OnBoarginReactor.swift */; };
+		EF7A17B728D6028C005A354C /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17B628D6028C005A354C /* DependencyProvider.swift */; };
+		EF7A17B928D603C8005A354C /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17B828D603C8005A354C /* ViewControllerAssembly.swift */; };
+		EF7A17BB28D603FC005A354C /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17BA28D603FC005A354C /* UseCaseAssembly.swift */; };
+		EF7A17BD28D60403005A354C /* DataSourceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17BC28D60403005A354C /* DataSourceAssembly.swift */; };
+		EF7A17BF28D60409005A354C /* ReactorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17BE28D60409005A354C /* ReactorAssembly.swift */; };
+		EF7A17C128D6040E005A354C /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17C028D6040E005A354C /* RepositoryAssembly.swift */; };
 		EF7C185028BDB425000B3D52 /* DaverStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C184F28BDB425000B3D52 /* DaverStep.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +88,12 @@
 		EF730BB728BDAEEE0027DF71 /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
 		EF730BBA28BDAEF70027DF71 /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		EF730BBC28BDAF0B0027DF71 /* OnBoarginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarginReactor.swift; sourceTree = "<group>"; };
+		EF7A17B628D6028C005A354C /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		EF7A17B828D603C8005A354C /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		EF7A17BA28D603FC005A354C /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		EF7A17BC28D60403005A354C /* DataSourceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceAssembly.swift; sourceTree = "<group>"; };
+		EF7A17BE28D60409005A354C /* ReactorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorAssembly.swift; sourceTree = "<group>"; };
+		EF7A17C028D6040E005A354C /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
 		EF7C184F28BDB425000B3D52 /* DaverStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaverStep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +250,8 @@
 		EF3AEE8B28C5A2F700743327 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A17B428D60265005A354C /* Provider */,
+				EF7A17B528D60273005A354C /* Assembly */,
 				EF3AEE8C28C5A30300743327 /* AppDI.swift */,
 			);
 			path = Container;
@@ -373,6 +387,26 @@
 				EF730BBA28BDAEF70027DF71 /* baseVC.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EF7A17B428D60265005A354C /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A17B628D6028C005A354C /* DependencyProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		EF7A17B528D60273005A354C /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A17B828D603C8005A354C /* ViewControllerAssembly.swift */,
+				EF7A17BA28D603FC005A354C /* UseCaseAssembly.swift */,
+				EF7A17BC28D60403005A354C /* DataSourceAssembly.swift */,
+				EF7A17BE28D60409005A354C /* ReactorAssembly.swift */,
+				EF7A17C028D6040E005A354C /* RepositoryAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		EF7C184D28BDB416000B3D52 /* Step */ = {
@@ -633,16 +667,22 @@
 				EF3AEE7F28C5948700743327 /* UIViewExt.swift in Sources */,
 				EF3AEE8228C594E800743327 /* UINavigationExt.swift in Sources */,
 				EF3AEE8728C5A15B00743327 /* OnBoardingFlow.swift in Sources */,
+				EF7A17BD28D60403005A354C /* DataSourceAssembly.swift in Sources */,
 				EF3AEE7A28C58FA200743327 /* OnBoardingButton.swift in Sources */,
 				EF3AEE8A28C5A1B900743327 /* Inject.swift in Sources */,
 				EF3AEE8428C5A10900743327 /* AppFlow.swift in Sources */,
 				EF3AEE8D28C5A30300743327 /* AppDI.swift in Sources */,
+				EF7A17BF28D60409005A354C /* ReactorAssembly.swift in Sources */,
+				EF7A17BB28D603FC005A354C /* UseCaseAssembly.swift in Sources */,
+				EF7A17C128D6040E005A354C /* RepositoryAssembly.swift in Sources */,
 				EF730BBB28BDAEF70027DF71 /* baseVC.swift in Sources */,
 				EF730B7D28BDAC320027DF71 /* AppDelegate.swift in Sources */,
 				EF730BB828BDAEEE0027DF71 /* OnBoardingVC.swift in Sources */,
 				EF730B7F28BDAC320027DF71 /* SceneDelegate.swift in Sources */,
 				EF7C185028BDB425000B3D52 /* DaverStep.swift in Sources */,
+				EF7A17B928D603C8005A354C /* ViewControllerAssembly.swift in Sources */,
 				EF17332E28C5A4B0004E9536 /* StepExt.swift in Sources */,
+				EF7A17B728D6028C005A354C /* DependencyProvider.swift in Sources */,
 				EF730BBD28BDAF0B0027DF71 /* OnBoarginReactor.swift in Sources */,
 				EF730B8728BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld in Sources */,
 			);
