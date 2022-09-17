@@ -1,0 +1,6 @@
+framework module Pods_Daver_iOS_V1_Daver_iOS_V1UITests {
+  umbrella header "Pods-Daver_iOS_V1-Daver_iOS_V1UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
