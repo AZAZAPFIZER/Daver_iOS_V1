@@ -29,4 +29,13 @@ final class OnBoardingReactor: Reactor, Stepper {
             
         )
     }
+    func mutate(action: Action) -> Observable<Mutation> {
+        switch action {
+        case .signInButtonDidTap:
+            return .empty()
+        case .signUpButtonDidTap:
+            steps.accept(DaverStep.signUpIsRequired)
+            return .empty()
+        }
+    }
 }
