@@ -9,6 +9,8 @@ import Swinject
 
 final class ReactorAssembly: Assembly {
     func assemble(container: Container) {
-        
+        container.register(OnBoardingReactor.self) { _ in
+            OnBoardingReactor()
+        }
     }
 }
