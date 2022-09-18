@@ -9,6 +9,8 @@ import Swinject
 
 final class ViewControllerAssembly: Assembly {
     func assemble(container: Container) {
-        
+        container.register(OnBoardingVC.self) { r in
+            OnBoardingVC(reactor: r.resolve(OnBoardingReactor.self))
+        }
     }
 }
