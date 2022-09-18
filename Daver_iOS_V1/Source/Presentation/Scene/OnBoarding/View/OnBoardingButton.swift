@@ -9,11 +9,13 @@ import UIKit
 
 final class OnBoardingButton: UIButton{
     // MARK: - Init
-    init(text: String, foregroundColor: UIColor, backgroundColor: UIColor){
+    init(text: String, foregroundColor: UIColor, backgroundColor: UIColor, BColor: UIColor){
         super.init(frame: .zero)
         self.setTitle(text, for: .normal)
         self.setTitleColor(foregroundColor, for: .normal)
         self.backgroundColor = backgroundColor
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = BColor.cgColor
         configureButton()
     }
     
