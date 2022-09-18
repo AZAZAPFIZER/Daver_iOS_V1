@@ -36,8 +36,23 @@ final class OnBoardingFlow: Flow{
     
     // MARK: - Navigate
     func navigate(to step: Step) -> FlowContributors {
+        guard let step = step.asDaverStep else { return .none }
         switch step {
-            case
+        case .onBoardingIsRequired:
+            return navigateToOnBoardingVC()
+        case .signUpIsRequired:
+            return navigateTosignUpVC()
+            
         }
+    }
+}
+private extension OnBoardingFlow {
+    private func navigateToOnBoardingVC() -> FlowContributors {
+        self.rootVC.setViewControllers([vc], animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.reactor ?? .init()))
+    }
+    private func navigateTosignUpVC() -> FlowContributors {
+        @Inject private var vc: SignUp
+        return .none
     }
 }
