@@ -18,8 +18,11 @@ class baseVC<T: Reactor>: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
-        
+        setUp()
+        addView()
+        setLayout()
+        configureVC()
+        configureNavigation()
         if traitCollection.userInterfaceStyle == .dark { darkConfigure() }
     }
     
