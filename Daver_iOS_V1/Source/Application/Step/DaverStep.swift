@@ -10,4 +10,6 @@ import RxFlow
 enum DaverStep: Step {
     // MARK: - OnBoarding Step
     case onBoardingIsRequired
+    
+    case signUpIsRequired
 }
