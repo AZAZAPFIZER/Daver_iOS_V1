@@ -21,7 +21,9 @@ class DependencyProvider {
                 ReactorAssembly(),
                 DataSourceAssembly(),
                 UseCaseAssembly(),
-                ViewControllerAssembly()
+                ViewControllerAssembly(),
+                StepperAssembly(),
+                FlowAssembly()
             ],
             container: container
         )
