@@ -9,8 +9,12 @@ import Swinject
 
 final class ReactorAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(OnBoardingReactor.self) { _ in
-            OnBoardingReactor()
+        container.register(SignInReactor.self) { _ in
+            SignInReactor()
+        }
+        
+        container.register(SignUpReactor.self) { r in
+            SignUpReactor(signUpUseCase: r.resolve(SignUpUseCase.self)!)
         }
     }
 }

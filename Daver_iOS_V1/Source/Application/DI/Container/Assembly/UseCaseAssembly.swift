@@ -9,6 +9,8 @@ import Swinject
 
 final class UseCaseAssembly: Assembly {
     func assemble(container: Container) {
-        
+        container.register(SignUpUseCase.self) { r in
+            SignUpUseCase(authRepository: r.resolve(AuthRepository.self)!)
+        }.inObjectScope(.container)
     }
 }

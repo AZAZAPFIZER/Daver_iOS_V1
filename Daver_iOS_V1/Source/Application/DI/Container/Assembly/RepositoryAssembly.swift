@@ -9,6 +9,8 @@ import Swinject
 
 final class RepositoryAssembly: Assembly {
     func assemble(container: Container) {
-        
+        container.register(AuthRepository.self) { r in
+            AuthRepositoryImpl(authDataSource: r.resolve(AuthDataSource.self)!)
+        }.inObjectScope(.container)
     }
 }

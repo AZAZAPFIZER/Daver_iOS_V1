@@ -9,6 +9,12 @@ import Swinject
 
 final class DataSourceAssembly: Assembly {
     func assemble(container: Container) {
+        container.register(AuthDataSource.self) { _ in
+            AuthDataSource(remote: AuthRemote(), cache: nil)
+        }.inObjectScope(.container)
         
+        container.register(SignUpRequest.self) { _ in
+            SignUpRequest()
+        }.inObjectScope(.container)
     }
 }
