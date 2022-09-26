@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class OnBoardingButton: UIButton{
+final class SignInButton: UIButton{
     // MARK: - Init
     init(text: String, foregroundColor: UIColor, backgroundColor: UIColor, BColor: UIColor){
         super.init(frame: .zero)
@@ -26,10 +26,10 @@ final class OnBoardingButton: UIButton{
 }
 
 // MARK: - UI
-private extension OnBoardingButton{
+private extension SignInButton{
     func configureButton(){
         self.titleLabel?.textAlignment = .center
         self.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
-        self.layer.cornerRadius = 6
+        self.layer.cornerRadius = 15
     }
 }

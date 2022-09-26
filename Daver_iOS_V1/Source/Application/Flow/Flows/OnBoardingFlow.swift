@@ -15,7 +15,7 @@ struct OnBoardingStepper: Stepper {
     let steps: PublishRelay<Step> = .init()
     
     var initialStep: Step{
-        return DaverStep.onBoardingIsRequired
+        return DaverStep.signInIsRequired
     }
 }
 
@@ -25,7 +25,7 @@ final class OnBoardingFlow: Flow{
         return self.rootVC
     }
     
-    @Inject private var vc: OnBoardingVC
+    @Inject private var vc: SignInVC
     @Inject var stepper: OnBoardingStepper
     private let rootVC = UINavigationController()
     
@@ -38,21 +38,32 @@ final class OnBoardingFlow: Flow{
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step.asDaverStep else { return .none }
         switch step {
-        case .onBoardingIsRequired:
+        case .signInIsRequired:
             return navigateToOnBoardingVC()
         case .signUpIsRequired:
             return navigateTosignUpVC()
-            
+        case .rootIsRequired:
+            return navigateToRoot()
+        case .forgotPwIsRequired:
+            return .none
         }
     }
 }
 private extension OnBoardingFlow {
+    private func navigateToRoot() -> FlowContributors {
+        self.rootVC.popToRootViewController(animated: true)
+        return .none
+    }
+    
     private func navigateToOnBoardingVC() -> FlowContributors {
         self.rootVC.setViewControllers([vc], animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.reactor ?? .init()))
     }
+    
     private func navigateTosignUpVC() -> FlowContributors {
-        @Inject private var vc: SignUp
-        return .none
+        @Inject var vc: SignUpVC
+        @Inject var signUpUseCase: SignUpUseCase
+        self.rootVC.pushViewController(vc, animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.reactor ?? .init(signUpUseCase: signUpUseCase)))
     }
 }

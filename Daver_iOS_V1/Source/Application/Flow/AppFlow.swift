@@ -14,7 +14,7 @@ struct AppStepper: Stepper{
     private let disposeBag: DisposeBag = .init()
     
     func readyToEmitSteps() {
-        Observable.just(DaverStep.onBoardingIsRequired)
+        Observable.just(DaverStep.signInIsRequired)
             .bind(to: steps)
             .disposed(by: disposeBag)
     }
@@ -45,7 +45,7 @@ final class AppFlow: Flow{
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step.asDaverStep else { return .none }
         switch step{
-        case .onBoardingIsRequired:
+        case .signInIsRequired:
             return coordinateToOnBoarding()
             /*
         case .mainTabbarIsRequired:

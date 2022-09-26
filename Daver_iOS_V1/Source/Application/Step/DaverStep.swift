@@ -8,8 +8,11 @@
 import RxFlow
 
 enum DaverStep: Step {
-    // MARK: - OnBoarding Step
-    case onBoardingIsRequired
+    // MARK: - Etc
+    case rootIsRequired
     
+    // MARK: - OnBoardingFlow
+    case signInIsRequired
     case signUpIsRequired
+    case forgotPwIsRequired
 }
