@@ -35,6 +35,7 @@ target 'Daver_iOS_V1' do
   pod 'Kingfisher'
   pod 'Carte'
   pod 'Swinject', '~> 2.7'
+  pod 'SwiftDate', '~> 6.3.1'
 
   target 'Daver_iOS_V1Tests' do
     inherit! :search_paths

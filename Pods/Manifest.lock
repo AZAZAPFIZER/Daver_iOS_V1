@@ -28,6 +28,7 @@ PODS:
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
+  - SwiftDate (6.3.1)
   - Swinject (2.8.1)
   - Then (3.0.0)
   - WeakMapTable (1.2.0)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxFlow
   - RxSwift (~> 6.2.0)
+  - SwiftDate (~> 6.3.1)
   - Swinject (~> 2.7)
   - Then
 
@@ -66,6 +68,7 @@ SPEC REPOS:
     - RxFlow
     - RxRelay
     - RxSwift
+    - SwiftDate
     - Swinject
     - Then
     - WeakMapTable
@@ -86,10 +89,11 @@ SPEC CHECKSUMS:
   RxFlow: 52f6f6379918392c1ea8cb62d8dcf2df9a5463dd
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: f708a558d9a1854670debeb6d7eb8b1b67ac03b9
+PODFILE CHECKSUM: deb3782dcc50ab68991ac6ab268c64a7cebaf939
 
 COCOAPODS: 1.11.3
