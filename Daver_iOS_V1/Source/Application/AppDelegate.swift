@@ -11,14 +11,12 @@ import Swinject
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    static let container = Container()
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         setFCM(application)
-        
-        AppDelegate.container.registerDependencies()
+        Thread.sleep(forTimeInterval: 1.6)
         return true
     }
     
