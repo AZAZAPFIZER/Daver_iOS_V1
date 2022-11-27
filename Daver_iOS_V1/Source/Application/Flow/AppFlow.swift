@@ -47,10 +47,10 @@ final class AppFlow: Flow{
         switch step{
         case .signInIsRequired:
             return coordinateToOnBoarding()
-            /*
+
         case .mainTabbarIsRequired:
             return coordinateToMainTabbar()
-             */
+
         default:
             return .none
         }
@@ -70,7 +70,7 @@ private extension AppFlow{
         }
         return .one(flowContributor: .contribute(withNextPresentable: flow, withNextStepper: flow.stepper))
     }
-    /*
+    
     func coordinateToMainTabbar() -> FlowContributors {
         @Inject var flow: MainTabbarFlow
         Flows.use(
@@ -82,6 +82,5 @@ private extension AppFlow{
         return .one(flowContributor: .contribute(withNextPresentable: flow,
                                                  withNextStepper: OneStepper(withSingleStep: DaverStep.mainTabbarIsRequired)))
     }
-    */
 }
 

@@ -12,5 +12,13 @@ final class UseCaseAssembly: Assembly {
         container.register(SignUpUseCase.self) { r in
             SignUpUseCase(authRepository: r.resolve(AuthRepository.self)!)
         }.inObjectScope(.container)
+        
+        container.register(SignInUseCase.self) { r in
+            SignInUseCase(authRepository: r.resolve(AuthRepository.self)!)
+        }.inObjectScope(.container)
+        
+        container.register(FetchPeopleLocationUseCase.self) { r in
+            FetchPeopleLocationUseCase(peopleRepository: r.resolve(PeopleRepository.self)!)
+        }.inObjectScope(.container)
     }
 }

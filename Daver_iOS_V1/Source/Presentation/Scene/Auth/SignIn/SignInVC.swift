@@ -92,15 +92,15 @@ final class SignInVC: baseVC<SignInReactor> {
     
     override func setLayout() {
         rootContainer.flex
-            .marginTop(100)
-            .marginBottom(200)
+            .marginTop(30)
+            .marginBottom(50)
             .define { flex in
                 // MARK: - Logo
                 flex.addItem()
                     .alignItems(.center)
                     .define { flex in
                         flex.addItem(logoImageView)
-                            .width(112)
+                            .width(105)
                             .aspectRatio(0.571)
                     }
                 // MARK: - Id
@@ -183,6 +183,11 @@ final class SignInVC: baseVC<SignInReactor> {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        signInButton.rx.tap
+            .map { Reactor.Action.signInButtonDidTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         forgotPwButton.rx.tap
             .map { Reactor.Action.forgotPwButtonDidTap }
             .bind(to: reactor.action)
@@ -213,10 +218,10 @@ final class SignInVC: baseVC<SignInReactor> {
             .map(\.pwVisible)
             .withUnretained(self)
             .bind { owner, visible in
-                owner.pwTextField.isSecureTextEntry = visible
+                owner.pwTextField.isSecureTextEntry = !visible
                 owner.pwVisibleButton.setImage(UIImage(
-                    systemName: visible ? "eye.slash.fill" : "eye.fill")?
-                    .tintColor(visible ? Metric.gray : Metric.primary)
+                    systemName: visible ? "eye.fill" : "eye.slash.fill")?
+                    .tintColor(visible ? Metric.primary : Metric.gray)
                                                , for: .normal)
             }
             .disposed(by: disposeBag)

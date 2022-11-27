@@ -12,5 +12,16 @@ class StepperAssembly: Assembly {
         container.register(OnBoardingStepper.self) { _ in
             OnBoardingStepper()
         }
+        
+        // MARK: - MainTabbar
+        container.register(HomeStepper.self) { _ in
+            HomeStepper()
+        }
+        container.register(ProfileStepper.self) { _ in
+            ProfileStepper()
+        }
+        container.register(FriendStepper.self) { _ in
+            FriendStepper()
+        }
     }
 }

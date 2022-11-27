@@ -16,5 +16,9 @@ final class DataSourceAssembly: Assembly {
         container.register(SignUpRequest.self) { _ in
             SignUpRequest()
         }.inObjectScope(.container)
+        
+        container.register(PeopleInfoDataSource.self) { _ in
+            PeopleInfoDataSource(remote: PeopleInfoRemote(), cache: nil)
+        }.inObjectScope(.container)
     }
 }

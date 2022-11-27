@@ -15,4 +15,17 @@ enum DaverStep: Step {
     case signInIsRequired
     case signUpIsRequired
     case forgotPwIsRequired
+    
+    // MARK: - MainFlow
+    case mainTabbarIsRequired
+    case homeIsRequired
+    case profileIsRequired
+    case friendIsRequired
+    
+    // MARK: - Profile
+    case myPageSettingIsRequired
+    
+    // MARK: - Friend
+    case requestFriendIsRequired
+    case reProfileIsRequired(Info)
 }

@@ -10,6 +10,15 @@
 		8DF122C0B34D2047F079646F /* Pods_Daver_iOS_V1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC250CFE03DCAB168E4E67C4 /* Pods_Daver_iOS_V1.framework */; };
 		9AA17EB43C48753A9F92D949 /* Pods_Daver_iOS_V1_Daver_iOS_V1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B809DED6B5B6CE36F8C0A4F /* Pods_Daver_iOS_V1_Daver_iOS_V1UITests.framework */; };
 		BC9B39DB5362EFE7E2BD8C1A /* Pods_Daver_iOS_V1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934B585A32D7B695ADF781B6 /* Pods_Daver_iOS_V1Tests.framework */; };
+		EF116EDF2910DBCE00D9053E /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EDE2910DBCE00D9053E /* People.swift */; };
+		EF116EE22910DE5E00D9053E /* FetchPeopleLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EE12910DE5E00D9053E /* FetchPeopleLocationUseCase.swift */; };
+		EF116EE52910DF3A00D9053E /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EE42910DF3A00D9053E /* PeopleRepository.swift */; };
+		EF116EE82910E19300D9053E /* PeopleRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EE72910E19300D9053E /* PeopleRepositoryImpl.swift */; };
+		EF116EEB2910F6BF00D9053E /* PeopleInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EEA2910F6BF00D9053E /* PeopleInfoDataSource.swift */; };
+		EF116EEE2910F75C00D9053E /* PeopleInfoRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EED2910F75C00D9053E /* PeopleInfoRemote.swift */; };
+		EF116EF12910F79800D9053E /* PeopleInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EF02910F79800D9053E /* PeopleInfoAPI.swift */; };
+		EF116EF42910F8CB00D9053E /* PeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EF32910F8CB00D9053E /* PeopleData.swift */; };
+		EF116EF62910F98600D9053E /* baseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF116EF52910F98600D9053E /* baseUseCase.swift */; };
 		EF17332E28C5A4B0004E9536 /* StepExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF17332D28C5A4B0004E9536 /* StepExt.swift */; };
 		EF3AEE7A28C58FA200743327 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AEE7928C58FA200743327 /* SignInButton.swift */; };
 		EF3AEE7F28C5948700743327 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AEE7E28C5948700743327 /* UIViewExt.swift */; };
@@ -18,6 +27,23 @@
 		EF3AEE8728C5A15B00743327 /* OnBoardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AEE8628C5A15B00743327 /* OnBoardingFlow.swift */; };
 		EF3AEE8A28C5A1B900743327 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AEE8928C5A1B900743327 /* Inject.swift */; };
 		EF3AEE8D28C5A30300743327 /* AppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AEE8C28C5A30300743327 /* AppDI.swift */; };
+		EF45FA912932141300EF9AB7 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FA902932141300EF9AB7 /* FriendCell.swift */; };
+		EF45FA932932147900EF9AB7 /* baseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FA922932147900EF9AB7 /* baseTableViewCell.swift */; };
+		EF45FA96293214A100EF9AB7 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FA95293214A100EF9AB7 /* Friend.swift */; };
+		EF45FA992932174B00EF9AB7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FA982932174B00EF9AB7 /* Reusable.swift */; };
+		EF45FA9D2932272900EF9AB7 /* FriendSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FA9C2932272900EF9AB7 /* FriendSection.swift */; };
+		EF45FAA42932769600EF9AB7 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FAA32932769600EF9AB7 /* EditProfileVC.swift */; };
+		EF45FAA6293276A000EF9AB7 /* EditProfileReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FAA5293276A000EF9AB7 /* EditProfileReactor.swift */; };
+		EF45FAA92932824500EF9AB7 /* ReqFriendReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FAA82932824500EF9AB7 /* ReqFriendReactor.swift */; };
+		EF45FAAB2932824F00EF9AB7 /* ReqFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45FAAA2932824F00EF9AB7 /* ReqFriendVC.swift */; };
+		EF5A7D4F290620B200E17206 /* MainTabbarFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D4E290620B200E17206 /* MainTabbarFlow.swift */; };
+		EF5A7D542906216A00E17206 /* MainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D532906216A00E17206 /* MainTabbarVC.swift */; };
+		EF5A7D562906224D00E17206 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D552906224D00E17206 /* HomeFlow.swift */; };
+		EF5A7D582906229900E17206 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D572906229900E17206 /* HomeVC.swift */; };
+		EF5A7D5B290622C000E17206 /* HomeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D5A290622C000E17206 /* HomeReactor.swift */; };
+		EF5A7D5D2906238600E17206 /* ProfileFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D5C2906238600E17206 /* ProfileFlow.swift */; };
+		EF5A7D60290623E700E17206 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D5F290623E700E17206 /* ProfileVC.swift */; };
+		EF5A7D622906240600E17206 /* ProfileReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5A7D612906240600E17206 /* ProfileReactor.swift */; };
 		EF655F5228D7F8D8003C1C86 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF655F5128D7F8D8003C1C86 /* SignUpRequest.swift */; };
 		EF655F5628D7FAE8003C1C86 /* baseRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF655F5528D7FAE8003C1C86 /* baseRemote.swift */; };
 		EF655F5928D7FD89003C1C86 /* TokenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF655F5828D7FD89003C1C86 /* TokenError.swift */; };
@@ -59,6 +85,13 @@
 		EF7A17CF28D6B786005A354C /* SignUpReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17CE28D6B786005A354C /* SignUpReactor.swift */; };
 		EF7A17D228D6B967005A354C /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A17D128D6B967005A354C /* UnderLineTextField.swift */; };
 		EF7C185028BDB425000B3D52 /* DaverStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C184F28BDB425000B3D52 /* DaverStep.swift */; };
+		EF9D5E892919F2A300FC69DD /* FriendFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9D5E882919F2A300FC69DD /* FriendFlow.swift */; };
+		EF9D5E8C2919F43500FC69DD /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9D5E8B2919F43500FC69DD /* FriendVC.swift */; };
+		EF9D5E8E2919F43D00FC69DD /* FriendReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9D5E8D2919F43D00FC69DD /* FriendReactor.swift */; };
+		EFA4F54A28FBFD9500C319A4 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4F54928FBFD9500C319A4 /* SignInRequest.swift */; };
+		EFA4F54C28FCE50600C319A4 /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4F54B28FCE50600C319A4 /* SignInUseCase.swift */; };
+		EFA4F54F28FCEF0400C319A4 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4F54E28FCEF0400C319A4 /* SignInResponse.swift */; };
+		EFA4F55328FCEFCE00C319A4 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4F55228FCEFCE00C319A4 /* Member.swift */; };
 		EFF9EFDE28DAB61800419AA1 /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9EFDD28DAB61800419AA1 /* SignInTextField.swift */; };
 		EFF9EFE028DAC99000419AA1 /* DivisionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9EFDF28DAC99000419AA1 /* DivisionLine.swift */; };
 		EFF9EFE328DADC6100419AA1 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF9EFE228DADC6100419AA1 /* UIImageExt.swift */; };
@@ -91,6 +124,15 @@
 		E0DDC239D1995CFAF115A6DD /* Pods-Daver_iOS_V1-Daver_iOS_V1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daver_iOS_V1-Daver_iOS_V1UITests.debug.xcconfig"; path = "Target Support Files/Pods-Daver_iOS_V1-Daver_iOS_V1UITests/Pods-Daver_iOS_V1-Daver_iOS_V1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9BAB7625F15E80302512DDE /* Pods-Daver_iOS_V1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daver_iOS_V1.release.xcconfig"; path = "Target Support Files/Pods-Daver_iOS_V1/Pods-Daver_iOS_V1.release.xcconfig"; sourceTree = "<group>"; };
 		EDADD5558EBBD206D57B2996 /* Pods-Daver_iOS_V1-Daver_iOS_V1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daver_iOS_V1-Daver_iOS_V1UITests.release.xcconfig"; path = "Target Support Files/Pods-Daver_iOS_V1-Daver_iOS_V1UITests/Pods-Daver_iOS_V1-Daver_iOS_V1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF116EDE2910DBCE00D9053E /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		EF116EE12910DE5E00D9053E /* FetchPeopleLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPeopleLocationUseCase.swift; sourceTree = "<group>"; };
+		EF116EE42910DF3A00D9053E /* PeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
+		EF116EE72910E19300D9053E /* PeopleRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepositoryImpl.swift; sourceTree = "<group>"; };
+		EF116EEA2910F6BF00D9053E /* PeopleInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoDataSource.swift; sourceTree = "<group>"; };
+		EF116EED2910F75C00D9053E /* PeopleInfoRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoRemote.swift; sourceTree = "<group>"; };
+		EF116EF02910F79800D9053E /* PeopleInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoAPI.swift; sourceTree = "<group>"; };
+		EF116EF32910F8CB00D9053E /* PeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleData.swift; sourceTree = "<group>"; };
+		EF116EF52910F98600D9053E /* baseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseUseCase.swift; sourceTree = "<group>"; };
 		EF17332D28C5A4B0004E9536 /* StepExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepExt.swift; sourceTree = "<group>"; };
 		EF3AEE7928C58FA200743327 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		EF3AEE7E28C5948700743327 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -99,6 +141,23 @@
 		EF3AEE8628C5A15B00743327 /* OnBoardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFlow.swift; sourceTree = "<group>"; };
 		EF3AEE8928C5A1B900743327 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		EF3AEE8C28C5A30300743327 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		EF45FA902932141300EF9AB7 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		EF45FA922932147900EF9AB7 /* baseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseTableViewCell.swift; sourceTree = "<group>"; };
+		EF45FA95293214A100EF9AB7 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		EF45FA982932174B00EF9AB7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		EF45FA9C2932272900EF9AB7 /* FriendSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendSection.swift; sourceTree = "<group>"; };
+		EF45FAA32932769600EF9AB7 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		EF45FAA5293276A000EF9AB7 /* EditProfileReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileReactor.swift; sourceTree = "<group>"; };
+		EF45FAA82932824500EF9AB7 /* ReqFriendReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqFriendReactor.swift; sourceTree = "<group>"; };
+		EF45FAAA2932824F00EF9AB7 /* ReqFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqFriendVC.swift; sourceTree = "<group>"; };
+		EF5A7D4E290620B200E17206 /* MainTabbarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarFlow.swift; sourceTree = "<group>"; };
+		EF5A7D532906216A00E17206 /* MainTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarVC.swift; sourceTree = "<group>"; };
+		EF5A7D552906224D00E17206 /* HomeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
+		EF5A7D572906229900E17206 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EF5A7D5A290622C000E17206 /* HomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReactor.swift; sourceTree = "<group>"; };
+		EF5A7D5C2906238600E17206 /* ProfileFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlow.swift; sourceTree = "<group>"; };
+		EF5A7D5F290623E700E17206 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		EF5A7D612906240600E17206 /* ProfileReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileReactor.swift; sourceTree = "<group>"; };
 		EF655F5128D7F8D8003C1C86 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		EF655F5528D7FAE8003C1C86 /* baseRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseRemote.swift; sourceTree = "<group>"; };
 		EF655F5828D7FD89003C1C86 /* TokenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenError.swift; sourceTree = "<group>"; };
@@ -144,6 +203,13 @@
 		EF7A17CE28D6B786005A354C /* SignUpReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpReactor.swift; sourceTree = "<group>"; };
 		EF7A17D128D6B967005A354C /* UnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLineTextField.swift; sourceTree = "<group>"; };
 		EF7C184F28BDB425000B3D52 /* DaverStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaverStep.swift; sourceTree = "<group>"; };
+		EF9D5E882919F2A300FC69DD /* FriendFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFlow.swift; sourceTree = "<group>"; };
+		EF9D5E8B2919F43500FC69DD /* FriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
+		EF9D5E8D2919F43D00FC69DD /* FriendReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendReactor.swift; sourceTree = "<group>"; };
+		EFA4F54928FBFD9500C319A4 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		EFA4F54B28FCE50600C319A4 /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
+		EFA4F54E28FCEF0400C319A4 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		EFA4F55228FCEFCE00C319A4 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		EFF9EFDD28DAB61800419AA1 /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
 		EFF9EFDF28DAC99000419AA1 /* DivisionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionLine.swift; sourceTree = "<group>"; };
 		EFF9EFE228DADC6100419AA1 /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
@@ -200,9 +266,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF116EDD2910DBC900D9053E /* People */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EDE2910DBCE00D9053E /* People.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		EF116EE02910DE5900D9053E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EE12910DE5E00D9053E /* FetchPeopleLocationUseCase.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF116EE32910DF3400D9053E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EE42910DF3A00D9053E /* PeopleRepository.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF116EE62910E16E00D9053E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EE72910E19300D9053E /* PeopleRepositoryImpl.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF116EE92910F6B800D9053E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EEA2910F6BF00D9053E /* PeopleInfoDataSource.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF116EEC2910F75700D9053E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EED2910F75C00D9053E /* PeopleInfoRemote.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF116EEF2910F79400D9053E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EF02910F79800D9053E /* PeopleInfoAPI.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF116EF22910F8BC00D9053E /* People */ = {
+			isa = PBXGroup;
+			children = (
+				EF116EF32910F8CB00D9053E /* PeopleData.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
 		EF17332828C5A488004E9536 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EF45FA972932173500EF9AB7 /* Reusable */,
 				EFF9EFE128DADC5600419AA1 /* UIImage */,
 				EF7A17C628D61B0C005A354C /* UITextField */,
 				EF3AEE8028C594D700743327 /* UINavigation */,
@@ -279,6 +410,7 @@
 		EF3AEE8528C5A15200743327 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				EF5A7D4B2906202A00E17206 /* Main */,
 				EF3AEE8628C5A15B00743327 /* OnBoardingFlow.swift */,
 			);
 			path = Flows;
@@ -303,6 +435,146 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		EF45FA8F293213FE00EF9AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FA9B2932271C00EF9AB7 /* Section */,
+				EF45FA9A2932271700EF9AB7 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF45FA942932149B00EF9AB7 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FA95293214A100EF9AB7 /* Friend.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		EF45FA972932173500EF9AB7 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FA982932174B00EF9AB7 /* Reusable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		EF45FA9A2932271700EF9AB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FA902932141300EF9AB7 /* FriendCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF45FA9B2932271C00EF9AB7 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FA9C2932272900EF9AB7 /* FriendSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		EF45FAA12932767F00EF9AB7 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D5F290623E700E17206 /* ProfileVC.swift */,
+				EF5A7D612906240600E17206 /* ProfileReactor.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		EF45FAA22932768900EF9AB7 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FAA32932769600EF9AB7 /* EditProfileVC.swift */,
+				EF45FAA5293276A000EF9AB7 /* EditProfileReactor.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		EF45FAA72932823F00EF9AB7 /* ReqFriend */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FAA82932824500EF9AB7 /* ReqFriendReactor.swift */,
+				EF45FAAA2932824F00EF9AB7 /* ReqFriendVC.swift */,
+			);
+			path = ReqFriend;
+			sourceTree = "<group>";
+		};
+		EF5A7D4B2906202A00E17206 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D4D2906203500E17206 /* Items */,
+				EF5A7D4C2906202C00E17206 /* Tabbar */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF5A7D4C2906202C00E17206 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D4E290620B200E17206 /* MainTabbarFlow.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		EF5A7D4D2906203500E17206 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D552906224D00E17206 /* HomeFlow.swift */,
+				EF5A7D5C2906238600E17206 /* ProfileFlow.swift */,
+				EF9D5E882919F2A300FC69DD /* FriendFlow.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		EF5A7D502906214100E17206 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D522906214C00E17206 /* TabItems */,
+				EF5A7D512906214200E17206 /* TabVC */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF5A7D512906214200E17206 /* TabVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D532906216A00E17206 /* MainTabbarVC.swift */,
+			);
+			path = TabVC;
+			sourceTree = "<group>";
+		};
+		EF5A7D522906214C00E17206 /* TabItems */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D5E8A2919F42D00FC69DD /* Friend */,
+				EF5A7D5E290623DF00E17206 /* Profile */,
+				EF5A7D59290622B200E17206 /* Home */,
+			);
+			path = TabItems;
+			sourceTree = "<group>";
+		};
+		EF5A7D59290622B200E17206 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7D572906229900E17206 /* HomeVC.swift */,
+				EF5A7D5A290622C000E17206 /* HomeReactor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF5A7D5E290623DF00E17206 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FAA22932768900EF9AB7 /* EditProfile */,
+				EF45FAA12932767F00EF9AB7 /* MyProfile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		EF655F4F28D7F8C2003C1C86 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,8 +587,8 @@
 		EF655F5028D7F8CC003C1C86 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				EFA4F54728FBFD8100C319A4 /* Auth */,
 				EF655F6228D803BD003C1C86 /* Token */,
-				EF655F5128D7F8D8003C1C86 /* SignUpRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -324,6 +596,7 @@
 		EF655F5328D7FA38003C1C86 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EEC2910F75700D9053E /* Home */,
 				EF655F6E28D8051A003C1C86 /* Auth */,
 				EF655F5528D7FAE8003C1C86 /* baseRemote.swift */,
 			);
@@ -333,6 +606,7 @@
 		EF655F5428D7FA4A003C1C86 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EEF2910F79400D9053E /* Home */,
 				EF655F6828D8041D003C1C86 /* Auth */,
 			);
 			path = API;
@@ -376,6 +650,8 @@
 		EF655F6B28D804AC003C1C86 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EF22910F8BC00D9053E /* People */,
+				EFA4F54D28FCEEFB00C319A4 /* SignIn */,
 				EF655F6C28D804C1003C1C86 /* Response.swift */,
 			);
 			path = Response;
@@ -392,6 +668,7 @@
 		EF655F7528D80897003C1C86 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EE92910F6B800D9053E /* Home */,
 				EF655F7628D808A2003C1C86 /* Auth */,
 				EF655F7928D808BD003C1C86 /* baseDataSource.swift */,
 			);
@@ -409,6 +686,7 @@
 		EF655F7B28D80986003C1C86 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EE32910DF3400D9053E /* Home */,
 				EF655F7C28D80995003C1C86 /* Auth */,
 			);
 			path = Repository;
@@ -425,6 +703,7 @@
 		EF655F7F28D809B9003C1C86 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EE62910E16E00D9053E /* Home */,
 				EF655F8028D809C9003C1C86 /* Auth */,
 			);
 			path = Repository;
@@ -441,8 +720,10 @@
 		EF655F8328D80A9B003C1C86 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				EF116EE02910DE5900D9053E /* Home */,
 				EF655F8628D80ABC003C1C86 /* Auth */,
 				EF655F8428D80AB7003C1C86 /* ParamUseCase.swift */,
+				EF116EF52910F98600D9053E /* baseUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -451,6 +732,7 @@
 			isa = PBXGroup;
 			children = (
 				EF655F8728D80AC9003C1C86 /* SignUpUseCase.swift */,
+				EFA4F54B28FCE50600C319A4 /* SignInUseCase.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -572,6 +854,7 @@
 		EF730BB528BDAED10027DF71 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EFA4F55028FCEFB900C319A4 /* Model */,
 				EF655F8328D80A9B003C1C86 /* UseCase */,
 				EF655F7B28D80986003C1C86 /* Repository */,
 				EF655F5728D7FD7F003C1C86 /* Error */,
@@ -592,6 +875,7 @@
 			isa = PBXGroup;
 			children = (
 				EF730BBA28BDAEF70027DF71 /* baseVC.swift */,
+				EF45FA922932147900EF9AB7 /* baseTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -629,6 +913,7 @@
 		EF7A17C928D61B58005A354C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				EF5A7D502906214100E17206 /* Main */,
 				EF7A17CA28D6B76F005A354C /* Auth */,
 			);
 			path = Scene;
@@ -676,6 +961,52 @@
 				EF3AEE8328C5A10900743327 /* AppFlow.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		EF9D5E8A2919F42D00FC69DD /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FAA72932823F00EF9AB7 /* ReqFriend */,
+				EF45FA8F293213FE00EF9AB7 /* View */,
+				EF9D5E8B2919F43500FC69DD /* FriendVC.swift */,
+				EF9D5E8D2919F43D00FC69DD /* FriendReactor.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		EFA4F54728FBFD8100C319A4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EF655F5128D7F8D8003C1C86 /* SignUpRequest.swift */,
+				EFA4F54928FBFD9500C319A4 /* SignInRequest.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EFA4F54D28FCEEFB00C319A4 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4F54E28FCEF0400C319A4 /* SignInResponse.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		EFA4F55028FCEFB900C319A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF45FA942932149B00EF9AB7 /* Friend */,
+				EF116EDD2910DBC900D9053E /* People */,
+				EFA4F55128FCEFC300C319A4 /* Member */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFA4F55128FCEFC300C319A4 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4F55228FCEFCE00C319A4 /* Member.swift */,
+			);
+			path = Member;
 			sourceTree = "<group>";
 		};
 		EFF9EFE128DADC5600419AA1 /* UIImage */ = {
@@ -934,15 +1265,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9D5E892919F2A300FC69DD /* FriendFlow.swift in Sources */,
 				EF7A17CF28D6B786005A354C /* SignUpReactor.swift in Sources */,
+				EF116EEB2910F6BF00D9053E /* PeopleInfoDataSource.swift in Sources */,
+				EF45FA9D2932272900EF9AB7 /* FriendSection.swift in Sources */,
 				EF655F8528D80AB7003C1C86 /* ParamUseCase.swift in Sources */,
 				EF655F6428D803C9003C1C86 /* TokenRefreshRequest.swift in Sources */,
 				EF3AEE7F28C5948700743327 /* UIViewExt.swift in Sources */,
+				EF116EDF2910DBCE00D9053E /* People.swift in Sources */,
+				EF5A7D542906216A00E17206 /* MainTabbarVC.swift in Sources */,
+				EF116EE52910DF3A00D9053E /* PeopleRepository.swift in Sources */,
+				EF45FAA6293276A000EF9AB7 /* EditProfileReactor.swift in Sources */,
+				EF116EF62910F98600D9053E /* baseUseCase.swift in Sources */,
 				EF3AEE8228C594E800743327 /* UINavigationExt.swift in Sources */,
 				EF7A17D228D6B967005A354C /* UnderLineTextField.swift in Sources */,
 				EF655F6D28D804C1003C1C86 /* Response.swift in Sources */,
+				EF116EE82910E19300D9053E /* PeopleRepositoryImpl.swift in Sources */,
+				EFA4F55328FCEFCE00C319A4 /* Member.swift in Sources */,
 				EFF9EFE328DADC6100419AA1 /* UIImageExt.swift in Sources */,
 				EF655F7E28D8099C003C1C86 /* AuthRepository.swift in Sources */,
+				EFA4F54C28FCE50600C319A4 /* SignInUseCase.swift in Sources */,
 				EF655F7828D808AC003C1C86 /* AuthDataSource.swift in Sources */,
 				EF3AEE8728C5A15B00743327 /* OnBoardingFlow.swift in Sources */,
 				EF7A17BD28D60403005A354C /* DataSourceAssembly.swift in Sources */,
@@ -950,24 +1292,42 @@
 				EFF9EFE028DAC99000419AA1 /* DivisionLine.swift in Sources */,
 				EF3AEE7A28C58FA200743327 /* SignInButton.swift in Sources */,
 				EF3AEE8A28C5A1B900743327 /* Inject.swift in Sources */,
+				EF116EE22910DE5E00D9053E /* FetchPeopleLocationUseCase.swift in Sources */,
+				EF9D5E8C2919F43500FC69DD /* FriendVC.swift in Sources */,
+				EF116EF42910F8CB00D9053E /* PeopleData.swift in Sources */,
 				EF3AEE8428C5A10900743327 /* AppFlow.swift in Sources */,
+				EF45FA932932147900EF9AB7 /* baseTableViewCell.swift in Sources */,
 				EF655F5228D7F8D8003C1C86 /* SignUpRequest.swift in Sources */,
+				EF45FAA92932824500EF9AB7 /* ReqFriendReactor.swift in Sources */,
+				EF45FAA42932769600EF9AB7 /* EditProfileVC.swift in Sources */,
 				EF655F8228D809DE003C1C86 /* AuthRepositoryImpl.swift in Sources */,
+				EF5A7D622906240600E17206 /* ProfileReactor.swift in Sources */,
 				EF655F6728D80400003C1C86 /* AuthController.swift in Sources */,
 				EF3AEE8D28C5A30300743327 /* AppDI.swift in Sources */,
 				EF655F7428D8060C003C1C86 /* Constants.swift in Sources */,
 				EF655F7A28D808BD003C1C86 /* baseDataSource.swift in Sources */,
+				EF5A7D4F290620B200E17206 /* MainTabbarFlow.swift in Sources */,
 				EF7A17BF28D60409005A354C /* ReactorAssembly.swift in Sources */,
 				EF7A17BB28D603FC005A354C /* UseCaseAssembly.swift in Sources */,
+				EF116EF12910F79800D9053E /* PeopleInfoAPI.swift in Sources */,
 				EF7A17C128D6040E005A354C /* RepositoryAssembly.swift in Sources */,
 				EF7A17C528D611D9005A354C /* StepperAssembly.swift in Sources */,
+				EF5A7D582906229900E17206 /* HomeVC.swift in Sources */,
+				EF5A7D60290623E700E17206 /* ProfileVC.swift in Sources */,
+				EFA4F54F28FCEF0400C319A4 /* SignInResponse.swift in Sources */,
 				EF7A17C328D611BB005A354C /* FlowAssembly.swift in Sources */,
 				EF655F6A28D8042D003C1C86 /* DaverTokenAPI.swift in Sources */,
 				EF655F7028D80527003C1C86 /* AuthRemote.swift in Sources */,
+				EF45FAAB2932824F00EF9AB7 /* ReqFriendVC.swift in Sources */,
 				EF7A17CD28D6B77F005A354C /* SignUpVC.swift in Sources */,
+				EF5A7D5B290622C000E17206 /* HomeReactor.swift in Sources */,
+				EFA4F54A28FBFD9500C319A4 /* SignInRequest.swift in Sources */,
 				EF655F5628D7FAE8003C1C86 /* baseRemote.swift in Sources */,
+				EF45FA96293214A100EF9AB7 /* Friend.swift in Sources */,
+				EF45FA992932174B00EF9AB7 /* Reusable.swift in Sources */,
 				EF730BBB28BDAEF70027DF71 /* baseVC.swift in Sources */,
 				EF730B7D28BDAC320027DF71 /* AppDelegate.swift in Sources */,
+				EF5A7D562906224D00E17206 /* HomeFlow.swift in Sources */,
 				EF655F8828D80AC9003C1C86 /* SignUpUseCase.swift in Sources */,
 				EF655F5928D7FD89003C1C86 /* TokenError.swift in Sources */,
 				EF7A17C828D61B19005A354C /* UITextFieldExt.swift in Sources */,
@@ -975,11 +1335,15 @@
 				EF730B7F28BDAC320027DF71 /* SceneDelegate.swift in Sources */,
 				EF7C185028BDB425000B3D52 /* DaverStep.swift in Sources */,
 				EF7A17B928D603C8005A354C /* ViewControllerAssembly.swift in Sources */,
+				EF116EEE2910F75C00D9053E /* PeopleInfoRemote.swift in Sources */,
 				EF17332E28C5A4B0004E9536 /* StepExt.swift in Sources */,
 				EF7A17B728D6028C005A354C /* DependencyProvider.swift in Sources */,
+				EF9D5E8E2919F43D00FC69DD /* FriendReactor.swift in Sources */,
 				EF730BBD28BDAF0B0027DF71 /* SignInReactor.swift in Sources */,
+				EF45FA912932141300EF9AB7 /* FriendCell.swift in Sources */,
 				EF655F7228D8056A003C1C86 /* DaverAuthAPI.swift in Sources */,
 				EFF9EFDE28DAB61800419AA1 /* SignInTextField.swift in Sources */,
+				EF5A7D5D2906238600E17206 /* ProfileFlow.swift in Sources */,
 				EF730B8728BDAC320027DF71 /* Daver_iOS_V1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1158,7 +1522,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1188,7 +1552,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

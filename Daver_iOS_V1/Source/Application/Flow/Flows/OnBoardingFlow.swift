@@ -46,6 +46,10 @@ final class OnBoardingFlow: Flow{
             return navigateToRoot()
         case .forgotPwIsRequired:
             return .none
+        case .mainTabbarIsRequired:
+            return .end(forwardToParentFlowWithStep: DaverStep.mainTabbarIsRequired)
+        default:
+            return .none
         }
     }
 }
@@ -56,14 +60,18 @@ private extension OnBoardingFlow {
     }
     
     private func navigateToOnBoardingVC() -> FlowContributors {
+        @Inject var signInUseCase: SignInUseCase
+        let reator = SignInReactor(signInUseCase: signInUseCase)
+        let vc = SignInVC(reactor: reator)
         self.rootVC.setViewControllers([vc], animated: true)
-        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.reactor ?? .init()))
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reator))
     }
     
     private func navigateTosignUpVC() -> FlowContributors {
-        @Inject var vc: SignUpVC
         @Inject var signUpUseCase: SignUpUseCase
+        let reactor = SignUpReactor(signUpUseCase: signUpUseCase)
+        let vc = SignUpVC(reactor: reactor)
         self.rootVC.pushViewController(vc, animated: true)
-        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.reactor ?? .init(signUpUseCase: signUpUseCase)))
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reactor))
     }
 }
