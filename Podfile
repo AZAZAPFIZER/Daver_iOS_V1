@@ -22,6 +22,7 @@ target 'Daver_iOS_V1' do
   pod 'ReactorKit'
   pod 'RxFlow'
   pod 'RxDataSources'
+  pod 'RxViewController'
 
   # Network
   pod 'Moya/RxSwift'
@@ -36,7 +37,8 @@ target 'Daver_iOS_V1' do
   pod 'Carte'
   pod 'Swinject', '~> 2.7'
   pod 'SwiftDate', '~> 6.3.1'
-
+  pod 'NMapsMap'  
+ 
   target 'Daver_iOS_V1Tests' do
     inherit! :search_paths
     # Pods for testing

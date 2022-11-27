@@ -11,6 +11,7 @@ PODS:
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
+  - NMapsMap (3.16.0)
   - PinLayout (1.10.3)
   - ReactorKit (3.2.0):
     - RxSwift (~> 6.0)
@@ -28,6 +29,9 @@ PODS:
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - SwiftDate (6.3.1)
   - Swinject (2.8.1)
   - Then (3.0.0)
@@ -41,12 +45,14 @@ DEPENDENCIES:
   - KeychainAccess
   - Kingfisher
   - Moya/RxSwift
+  - NMapsMap
   - PinLayout
   - ReactorKit
   - RxCocoa (~> 6.2.0)
   - RxDataSources
   - RxFlow
   - RxSwift (~> 6.2.0)
+  - RxViewController
   - SwiftDate (~> 6.3.1)
   - Swinject (~> 2.7)
   - Then
@@ -61,6 +67,7 @@ SPEC REPOS:
     - KeychainAccess
     - Kingfisher
     - Moya
+    - NMapsMap
     - PinLayout
     - ReactorKit
     - RxCocoa
@@ -68,6 +75,7 @@ SPEC REPOS:
     - RxFlow
     - RxRelay
     - RxSwift
+    - RxViewController
     - SwiftDate
     - Swinject
     - Then
@@ -82,6 +90,7 @@ SPEC CHECKSUMS:
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NMapsMap: a2593320fca2bb09e521c05b4dffee4da42e96ed
   PinLayout: 0090ccbf29ae69af6ae5a15eaeaf27ed7b2c4d83
   ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
@@ -89,11 +98,12 @@ SPEC CHECKSUMS:
   RxFlow: 52f6f6379918392c1ea8cb62d8dcf2df9a5463dd
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: deb3782dcc50ab68991ac6ab268c64a7cebaf939
+PODFILE CHECKSUM: 9bc0a4ade94deeb8f79aa643cf60b930075e401a
 
 COCOAPODS: 1.11.3
