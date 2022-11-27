@@ -15,7 +15,7 @@ struct OnBoardingStepper: Stepper {
     let steps: PublishRelay<Step> = .init()
     
     var initialStep: Step{
-        return DaverStep.onBoardingIsRequired
+        return DaverStep.signInIsRequired
     }
 }
 
@@ -25,7 +25,7 @@ final class OnBoardingFlow: Flow{
         return self.rootVC
     }
     
-    @Inject private var vc: OnBoardingVC
+    @Inject private var vc: SignInVC
     @Inject var stepper: OnBoardingStepper
     private let rootVC = UINavigationController()
     
@@ -36,8 +36,42 @@ final class OnBoardingFlow: Flow{
     
     // MARK: - Navigate
     func navigate(to step: Step) -> FlowContributors {
+        guard let step = step.asDaverStep else { return .none }
         switch step {
-            case
+        case .signInIsRequired:
+            return navigateToOnBoardingVC()
+        case .signUpIsRequired:
+            return navigateTosignUpVC()
+        case .rootIsRequired:
+            return navigateToRoot()
+        case .forgotPwIsRequired:
+            return .none
+        case .mainTabbarIsRequired:
+            return .end(forwardToParentFlowWithStep: DaverStep.mainTabbarIsRequired)
+        default:
+            return .none
         }
+    }
+}
+private extension OnBoardingFlow {
+    private func navigateToRoot() -> FlowContributors {
+        self.rootVC.popToRootViewController(animated: true)
+        return .none
+    }
+    
+    private func navigateToOnBoardingVC() -> FlowContributors {
+        @Inject var signInUseCase: SignInUseCase
+        let reator = SignInReactor(signInUseCase: signInUseCase)
+        let vc = SignInVC(reactor: reator)
+        self.rootVC.setViewControllers([vc], animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reator))
+    }
+    
+    private func navigateTosignUpVC() -> FlowContributors {
+        @Inject var signUpUseCase: SignUpUseCase
+        let reactor = SignUpReactor(signUpUseCase: signUpUseCase)
+        let vc = SignUpVC(reactor: reactor)
+        self.rootVC.pushViewController(vc, animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reactor))
     }
 }
